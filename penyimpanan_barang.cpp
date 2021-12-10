@@ -155,12 +155,15 @@ void edit_barang() {
           cout << "Jika nama barang tidak diganti masukkan \"-\"" << endl;
           cout << "Nama barang : "; cin >> nama;
           if(nama != "-") arr_barang[pos].nama_brg = nama;
+          
           cout << endl << "Jika harga barang tidak diganti masukkan \"-0\"" << endl;
           cout << "Harga barang : "; cin >> harga;
           if(harga != -0) arr_barang[pos].harga = harga;
+          
           cout << endl << "Jika stok barang tidak diganti masukkan \"-0\"" << endl;
           cout << "Stok barang : "; cin >> stok;
           if(stok != -0) arr_barang[pos].stok = stok;
+          
           cout << endl << "Data berhasil disimpan" << endl;
           cout << "Apakah ingin lanjut edit (y/q) ? "; cin >> lanjut2;
           if(tolower(lanjut2) == 'q') lanjut = 'q';
